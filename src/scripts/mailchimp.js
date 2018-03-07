@@ -35,4 +35,3 @@
 //   dc: 'us12',
 //   origin: '.api.mailchimp.com/',
 // }
-"use strict";
