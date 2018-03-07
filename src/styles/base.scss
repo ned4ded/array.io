@@ -1,1 +1,190 @@
 @import 'bootfix.scss';
+@import 'variables.scss';
+
+.main-info {
+  background: $main-bg-color;
+  text-align: center;
+  padding-top: 20px;
+  background-position: center top;
+  background-attachment: scroll;
+  background-image: url('../assets/imgs/main-info-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__ux {
+    max-width: 950px;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__text {
+    margin-bottom: 70px;
+
+    opacity: 0.75;
+    color: $main-text-color;
+
+    font-family: 'Arial';
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}
+
+.subscribe-info {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-color: $nuance-bg-color;
+  text-align: center;
+
+  &__heading {
+    margin-bottom: 24px;
+
+    color: $contrast-text-color;
+
+    font-family: $font-robot;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.23;
+  }
+
+  &__text {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 74px;
+
+    color: $contrast-text-color;
+
+    font-family: $font-robot;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+}
+
+.subscribe {
+  margin: auto;
+  max-width: 590px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  &__input {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    font-family: $font-robot;
+    font-size: 100%;
+    height: 60px;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 1.33;
+    width: 75%;
+    max-width: 440px;
+    border: 0 none;
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  &__submit {
+    height: 60px;
+    margin: 0;
+    padding: 0 30px;
+
+    cursor: pointer;
+    text-align: center;
+
+    color: rgb(255, 255, 255);
+    border: 0 none;
+    border-radius: 30px;
+    outline: none;
+    background: transparent;
+    background-color: transparent;
+    background-color: rgb(0, 0, 0);
+
+    font-family: $font-robot;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+.footer {
+  background-color: $semi-bg-color;
+  padding-top: 35px;
+  padding-bottom: 25px;
+
+  &__socials {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  &__link {
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+
+    &--github {
+      background-image: url('../assets/imgs/icon-github.png');
+    }
+    &--telegram {
+      background-image: url('../assets/imgs/icon-telegram.png');
+    }
+  }
+
+  &__text {
+    color: $main-text-color;
+    font-family: 'Arial';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.55;
+  }
+
+  &__delimiter {
+    position: relative;
+
+    padding-top: 35px;
+
+    &:before {
+      position: absolute;
+
+      display: block;
+
+      width: 100%;
+      max-width: 1160px;
+      height: 1px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      content: '';
+
+      opacity: 0.1;
+      background-color: rgb(255, 255, 255);
+    }
+  }
+}
+
+.heading-1 {
+  margin-bottom: 15px;
+
+  color: $main-text-color;
+
+  font-family: 'Arial';
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.logo {
+  width: 70%;
+  max-width: 310px;
+  height: auto;
+  margin-bottom: 0;
+}
